@@ -1,26 +1,324 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZDf-ct-wbU">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Control Panel View Controller - ControlPanel-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ControlPanelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7G-gz-ibY"/>
+                        <viewControllerLayoutGuide type="bottom" id="2MI-0M-rQ0"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br4-fa-h33">
+                                <rect key="frame" x="14" y="90" width="92" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                <state key="normal" title="Information" backgroundImage="ButtonIcon.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DI0-cd-8ga" kind="push" id="gnw-7s-KTF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1f-Vh-5AW">
+                                <rect key="frame" x="114" y="90" width="92" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Scanner" backgroundImage="ButtonIcon.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gaw-Ic-pF8" kind="push" id="BN7-v9-qtr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZp-nP-kvo">
+                                <rect key="frame" x="214" y="90" width="92" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="MSR" backgroundImage="ButtonIcon.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IHv-3R-dun" kind="push" id="G6W-Bf-HzM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMw-8h-RRf">
+                                <rect key="frame" x="14" y="153" width="92" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Bluetooth" backgroundImage="ButtonIcon.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jpG-zG-0ML" kind="push" id="hMw-Eg-vXQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZh-UP-1qn">
+                                <rect key="frame" x="14" y="216" width="92" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Report" backgroundImage="ButtonIcon.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bx1-ZB-yag" kind="push" id="ref-XD-e5g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgn-ff-eou">
+                                <rect key="frame" x="114" y="153" width="92" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="RFID" backgroundImage="ButtonIcon.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kYY-9g-zn9" kind="push" id="74M-Qa-VOh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUj-le-O5M">
+                                <rect key="frame" x="214" y="153" width="92" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <state key="normal" title="Cycle" backgroundImage="ButtonIcon.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vQa-Pn-r6X" kind="push" id="8xe-XU-bmR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ControlPanel" id="Lmw-1l-VWJ">
+                        <barButtonItem key="rightBarButtonItem" title=">" id="VEM-3c-8ZA">
+                            <connections>
+                                <segue destination="DI0-cd-8ga" kind="push" id="J1I-CH-Rns"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="-129"/>
+        </scene>
+        <!--General Info View Controller - General Info-->
+        <scene sceneID="uMv-v3-JpD">
+            <objects>
+                <viewController id="DI0-cd-8ga" customClass="GeneralInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nl1-e6-uta"/>
+                        <viewControllerLayoutGuide type="bottom" id="FWE-fq-mLb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j3N-40-oOI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="General Info" id="Xio-SX-j0J">
+                        <barButtonItem key="rightBarButtonItem" title=">" id="tyj-cy-OF8">
+                            <connections>
+                                <segue destination="gaw-Ic-pF8" kind="push" id="ea2-GR-dbc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNU-AK-lqA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1363" y="-129"/>
+        </scene>
+        <!--Scanner View Controller - Scanner-->
+        <scene sceneID="AEc-qT-hvc">
+            <objects>
+                <viewController id="gaw-Ic-pF8" customClass="ScannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="djS-O8-wtY"/>
+                        <viewControllerLayoutGuide type="bottom" id="vyl-aN-5tI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DYn-GZ-xzE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scanner" id="1tP-lv-MB3">
+                        <barButtonItem key="rightBarButtonItem" title=">" id="SBk-Kf-kKZ">
+                            <connections>
+                                <segue destination="IHv-3R-dun" kind="push" id="gNE-we-VZc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sfk-J7-et4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731" y="-129"/>
+        </scene>
+        <!--View Controller - MSR-->
+        <scene sceneID="lgd-sx-5Rd">
+            <objects>
+                <viewController id="IHv-3R-dun" customClass="MSRViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ytA-ia-V3P"/>
+                        <viewControllerLayoutGuide type="bottom" id="gxr-bf-qQq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0v9-Ct-9Ym">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MSR" id="RxE-Ed-X1N">
+                        <barButtonItem key="rightBarButtonItem" title=">" id="bT1-Yp-DlB">
+                            <connections>
+                                <segue destination="jpG-zG-0ML" kind="push" id="j3f-2r-ZAh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vuv-5G-t1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="-129"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PPA-7l-SSn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZDf-ct-wbU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wIA-sa-5Bq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="mAl-0K-NVQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3c-30-FBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493" y="138"/>
+        </scene>
+        <!--Bluetooth View Controller - Bluetooth-->
+        <scene sceneID="E8F-y2-Wpt">
+            <objects>
+                <viewController id="jpG-zG-0ML" customClass="BluetoothViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Phj-fy-N5W"/>
+                        <viewControllerLayoutGuide type="bottom" id="iP3-PB-oyh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fqz-fo-Ily">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bluetooth" id="VR5-yk-d1q">
+                        <barButtonItem key="rightBarButtonItem" title=">" id="pvu-cr-UfO">
+                            <connections>
+                                <segue destination="kYY-9g-zn9" kind="push" id="sdh-X9-znj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9n-eS-wo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="545"/>
+        </scene>
+        <!--View Controller - RFID-->
+        <scene sceneID="W5a-gw-xJh">
+            <objects>
+                <viewController id="kYY-9g-zn9" customClass="RFIDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dti-ax-fv1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hvv-7i-0MW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XCS-GA-TmB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RFID" id="nof-kU-wU3">
+                        <barButtonItem key="rightBarButtonItem" title=">" id="VjR-zJ-IQS">
+                            <connections>
+                                <segue destination="vQa-Pn-r6X" kind="push" id="AZf-JN-TYI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X09-PA-vuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1363" y="545"/>
+        </scene>
+        <!--Cycle View Controller - Cycle-->
+        <scene sceneID="kAw-xA-b54">
+            <objects>
+                <viewController id="vQa-Pn-r6X" customClass="CycleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uhf-Pa-bMe"/>
+                        <viewControllerLayoutGuide type="bottom" id="si1-wS-dFn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lvc-qg-SgV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cycle" id="ygz-p6-PZf">
+                        <barButtonItem key="rightBarButtonItem" title=">" id="jvX-Uu-YJy">
+                            <connections>
+                                <segue destination="Bx1-ZB-yag" kind="push" id="lI8-v0-34h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwm-ii-buS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="545"/>
+        </scene>
+        <!--Report View Controller - Report-->
+        <scene sceneID="64o-tZ-Xkw">
+            <objects>
+                <viewController id="Bx1-ZB-yag" customClass="ReportViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ivn-O5-5Bf"/>
+                        <viewControllerLayoutGuide type="bottom" id="aSv-av-GFQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="epB-2E-6V6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Report" id="L29-Br-a47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kp0-GZ-JLq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2102" y="545"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ButtonIcon.png" width="547" height="546"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="8xe-XU-bmR"/>
+        <segue reference="74M-Qa-VOh"/>
+        <segue reference="G6W-Bf-HzM"/>
+        <segue reference="hMw-Eg-vXQ"/>
+        <segue reference="gnw-7s-KTF"/>
+        <segue reference="ref-XD-e5g"/>
+        <segue reference="ea2-GR-dbc"/>
+    </inferredMetricsTieBreakers>
 </document>

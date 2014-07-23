@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDA57DE9198017960053843D /* libdtdev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA57DE7198017960053843D /* libdtdev.a */; };
+		DDAEECF71980204F00FB347C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAEECF61980204F00FB347C /* MessageUI.framework */; };
+		DDAEECF9198020A100FB347C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAEECF8198020A100FB347C /* AVFoundation.framework */; };
+		DDAEECFB198020AF00FB347C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAEECFA198020AF00FB347C /* AudioToolbox.framework */; };
 		DDBD0254197EB88A009B4B96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBD0253197EB88A009B4B96 /* Foundation.framework */; };
 		DDBD0256197EB88A009B4B96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBD0255197EB88A009B4B96 /* CoreGraphics.framework */; };
 		DDBD0258197EB88A009B4B96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBD0257197EB88A009B4B96 /* UIKit.framework */; };
@@ -15,13 +19,21 @@
 		DDBD0264197EB88A009B4B96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD0263197EB88A009B4B96 /* AppDelegate.m */; };
 		DDBD0267197EB88A009B4B96 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBD0265197EB88A009B4B96 /* Main_iPhone.storyboard */; };
 		DDBD026A197EB88A009B4B96 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBD0268197EB88A009B4B96 /* Main_iPad.storyboard */; };
-		DDBD026D197EB88A009B4B96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD026C197EB88A009B4B96 /* ViewController.m */; };
 		DDBD026F197EB88A009B4B96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBD026E197EB88A009B4B96 /* Images.xcassets */; };
 		DDBD0276197EB88A009B4B96 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBD0275197EB88A009B4B96 /* XCTest.framework */; };
 		DDBD0277197EB88A009B4B96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBD0253197EB88A009B4B96 /* Foundation.framework */; };
 		DDBD0278197EB88A009B4B96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBD0257197EB88A009B4B96 /* UIKit.framework */; };
 		DDBD0280197EB88A009B4B96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDBD027E197EB88A009B4B96 /* InfoPlist.strings */; };
 		DDBD0282197EB88A009B4B96 /* QCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD0281197EB88A009B4B96 /* QCTests.m */; };
+		DDBD028D197EB9BE009B4B96 /* ControlPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD028C197EB9BE009B4B96 /* ControlPanelViewController.m */; };
+		DDBD0290197EB9D0009B4B96 /* GeneralInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD028F197EB9D0009B4B96 /* GeneralInfoViewController.m */; };
+		DDBD0293197EB9DC009B4B96 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD0292197EB9DC009B4B96 /* ScannerViewController.m */; };
+		DDBD0296197EB9F8009B4B96 /* MSRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD0295197EB9F8009B4B96 /* MSRViewController.m */; };
+		DDBD0299197EBA05009B4B96 /* BluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD0298197EBA05009B4B96 /* BluetoothViewController.m */; };
+		DDBD029C197EBA11009B4B96 /* RFIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD029B197EBA11009B4B96 /* RFIDViewController.m */; };
+		DDBD029F197EBA1F009B4B96 /* CycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD029E197EBA1F009B4B96 /* CycleViewController.m */; };
+		DDBD02A2197EBA2A009B4B96 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD02A1197EBA2A009B4B96 /* ReportViewController.m */; };
+		DDC055BA197F07B1001097E7 /* ButtonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC055B9197F07B1001097E7 /* ButtonIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DDA57DE7198017960053843D /* libdtdev.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdtdev.a; sourceTree = "<group>"; };
+		DDA57DE8198017960053843D /* DTDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDevices.h; sourceTree = "<group>"; };
+		DDAEECF61980204F00FB347C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DDAEECF8198020A100FB347C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DDAEECFA198020AF00FB347C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DDBD0250197EB88A009B4B96 /* QC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBD0253197EB88A009B4B96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDBD0255197EB88A009B4B96 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,14 +64,29 @@
 		DDBD0263197EB88A009B4B96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DDBD0266197EB88A009B4B96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DDBD0269197EB88A009B4B96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		DDBD026B197EB88A009B4B96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DDBD026C197EB88A009B4B96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DDBD026E197EB88A009B4B96 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DDBD0274197EB88A009B4B96 /* QCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBD0275197EB88A009B4B96 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DDBD027D197EB88A009B4B96 /* QCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QCTests-Info.plist"; sourceTree = "<group>"; };
 		DDBD027F197EB88A009B4B96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDBD0281197EB88A009B4B96 /* QCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCTests.m; sourceTree = "<group>"; };
+		DDBD028B197EB9BE009B4B96 /* ControlPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlPanelViewController.h; sourceTree = "<group>"; };
+		DDBD028C197EB9BE009B4B96 /* ControlPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlPanelViewController.m; sourceTree = "<group>"; };
+		DDBD028E197EB9D0009B4B96 /* GeneralInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralInfoViewController.h; sourceTree = "<group>"; };
+		DDBD028F197EB9D0009B4B96 /* GeneralInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralInfoViewController.m; sourceTree = "<group>"; };
+		DDBD0291197EB9DC009B4B96 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
+		DDBD0292197EB9DC009B4B96 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
+		DDBD0294197EB9F8009B4B96 /* MSRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRViewController.h; sourceTree = "<group>"; };
+		DDBD0295197EB9F8009B4B96 /* MSRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRViewController.m; sourceTree = "<group>"; };
+		DDBD0297197EBA05009B4B96 /* BluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothViewController.h; sourceTree = "<group>"; };
+		DDBD0298197EBA05009B4B96 /* BluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothViewController.m; sourceTree = "<group>"; };
+		DDBD029A197EBA11009B4B96 /* RFIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFIDViewController.h; sourceTree = "<group>"; };
+		DDBD029B197EBA11009B4B96 /* RFIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFIDViewController.m; sourceTree = "<group>"; };
+		DDBD029D197EBA1F009B4B96 /* CycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleViewController.h; sourceTree = "<group>"; };
+		DDBD029E197EBA1F009B4B96 /* CycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleViewController.m; sourceTree = "<group>"; };
+		DDBD02A0197EBA2A009B4B96 /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
+		DDBD02A1197EBA2A009B4B96 /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
+		DDC055B9197F07B1001097E7 /* ButtonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +94,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAEECFB198020AF00FB347C /* AudioToolbox.framework in Frameworks */,
+				DDAEECF9198020A100FB347C /* AVFoundation.framework in Frameworks */,
+				DDAEECF71980204F00FB347C /* MessageUI.framework in Frameworks */,
 				DDBD0256197EB88A009B4B96 /* CoreGraphics.framework in Frameworks */,
 				DDBD0258197EB88A009B4B96 /* UIKit.framework in Frameworks */,
 				DDBD0254197EB88A009B4B96 /* Foundation.framework in Frameworks */,
+				DDA57DE9198017960053843D /* libdtdev.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +139,9 @@
 		DDBD0252197EB88A009B4B96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDAEECFA198020AF00FB347C /* AudioToolbox.framework */,
+				DDAEECF8198020A100FB347C /* AVFoundation.framework */,
+				DDAEECF61980204F00FB347C /* MessageUI.framework */,
 				DDBD0253197EB88A009B4B96 /* Foundation.framework */,
 				DDBD0255197EB88A009B4B96 /* CoreGraphics.framework */,
 				DDBD0257197EB88A009B4B96 /* UIKit.framework */,
@@ -116,10 +155,26 @@
 			children = (
 				DDBD0262197EB88A009B4B96 /* AppDelegate.h */,
 				DDBD0263197EB88A009B4B96 /* AppDelegate.m */,
+				DDA57DE7198017960053843D /* libdtdev.a */,
+				DDA57DE8198017960053843D /* DTDevices.h */,
 				DDBD0265197EB88A009B4B96 /* Main_iPhone.storyboard */,
 				DDBD0268197EB88A009B4B96 /* Main_iPad.storyboard */,
-				DDBD026B197EB88A009B4B96 /* ViewController.h */,
-				DDBD026C197EB88A009B4B96 /* ViewController.m */,
+				DDBD028B197EB9BE009B4B96 /* ControlPanelViewController.h */,
+				DDBD028C197EB9BE009B4B96 /* ControlPanelViewController.m */,
+				DDBD028E197EB9D0009B4B96 /* GeneralInfoViewController.h */,
+				DDBD028F197EB9D0009B4B96 /* GeneralInfoViewController.m */,
+				DDBD0291197EB9DC009B4B96 /* ScannerViewController.h */,
+				DDBD0292197EB9DC009B4B96 /* ScannerViewController.m */,
+				DDBD0294197EB9F8009B4B96 /* MSRViewController.h */,
+				DDBD0295197EB9F8009B4B96 /* MSRViewController.m */,
+				DDBD0297197EBA05009B4B96 /* BluetoothViewController.h */,
+				DDBD0298197EBA05009B4B96 /* BluetoothViewController.m */,
+				DDBD029A197EBA11009B4B96 /* RFIDViewController.h */,
+				DDBD029B197EBA11009B4B96 /* RFIDViewController.m */,
+				DDBD029D197EBA1F009B4B96 /* CycleViewController.h */,
+				DDBD029E197EBA1F009B4B96 /* CycleViewController.m */,
+				DDBD02A0197EBA2A009B4B96 /* ReportViewController.h */,
+				DDBD02A1197EBA2A009B4B96 /* ReportViewController.m */,
 				DDBD026E197EB88A009B4B96 /* Images.xcassets */,
 				DDBD025A197EB88A009B4B96 /* Supporting Files */,
 			);
@@ -129,6 +184,7 @@
 		DDBD025A197EB88A009B4B96 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DDC055B9197F07B1001097E7 /* ButtonIcon.png */,
 				DDBD025B197EB88A009B4B96 /* QC-Info.plist */,
 				DDBD025C197EB88A009B4B96 /* InfoPlist.strings */,
 				DDBD025F197EB88A009B4B96 /* main.m */,
@@ -231,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC055BA197F07B1001097E7 /* ButtonIcon.png in Resources */,
 				DDBD026A197EB88A009B4B96 /* Main_iPad.storyboard in Resources */,
 				DDBD026F197EB88A009B4B96 /* Images.xcassets in Resources */,
 				DDBD0267197EB88A009B4B96 /* Main_iPhone.storyboard in Resources */,
@@ -253,9 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDBD026D197EB88A009B4B96 /* ViewController.m in Sources */,
+				DDBD02A2197EBA2A009B4B96 /* ReportViewController.m in Sources */,
 				DDBD0264197EB88A009B4B96 /* AppDelegate.m in Sources */,
+				DDBD028D197EB9BE009B4B96 /* ControlPanelViewController.m in Sources */,
+				DDBD0299197EBA05009B4B96 /* BluetoothViewController.m in Sources */,
+				DDBD029C197EBA11009B4B96 /* RFIDViewController.m in Sources */,
 				DDBD0260197EB88A009B4B96 /* main.m in Sources */,
+				DDBD029F197EBA1F009B4B96 /* CycleViewController.m in Sources */,
+				DDBD0296197EB9F8009B4B96 /* MSRViewController.m in Sources */,
+				DDBD0290197EB9D0009B4B96 /* GeneralInfoViewController.m in Sources */,
+				DDBD0293197EB9DC009B4B96 /* ScannerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +459,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QC/QC-Prefix.pch";
 				INFOPLIST_FILE = "QC/QC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jimnguyen/Desktop/QC\\ softwares/QC/QC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,6 +477,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QC/QC-Prefix.pch";
 				INFOPLIST_FILE = "QC/QC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jimnguyen/Desktop/QC\\ softwares/QC/QC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +548,7 @@
 				DDBD0287197EB88A009B4B96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDBD0288197EB88A009B4B96 /* Build configuration list for PBXNativeTarget "QCTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +557,7 @@
 				DDBD028A197EB88A009B4B96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
